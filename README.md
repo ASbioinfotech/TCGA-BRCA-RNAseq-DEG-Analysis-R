@@ -175,8 +175,7 @@ Breast-Cancer-RNAseq-DEG-Analysis-R/
 
 ### PCA Plot
 
-<img width="2100" height="1500" alt="TCGA_BRCA_small_pca_plot" src="https://github.com/user-attachments/assets/01436273-8648-4947-ad03-1d7fa4f09320" />
-
+![PCA Plot](figures/TCGA_BRCA_small_pca_plot.png)
 
 The PCA plot was used to visualize the overall gene expression variation between TCGA-BRCA tumor and normal samples.
 
@@ -194,7 +193,7 @@ The PCA plot was used to visualize the overall gene expression variation between
 
 ### Volcano Plot
 
-![Volcano Plot](figures/R-volcano-plot.png)
+![Volcano Plot](figures/TCGA_BRCA_small_volcano_plot.png)
 
 The volcano plot shows differentially expressed genes between TCGA-BRCA tumor and normal samples.
 
@@ -222,30 +221,3 @@ The significance criteria used in this project were:
 ```text
 Adjusted p-value < 0.05
 Absolute log2 fold change > 1
-
-### Heatmap
-
-![Heatmap](figures/TCGA_BRCA_small_heatmap_top_30_genes.png)
-
-The heatmap shows the expression pattern of the top 30 differentially expressed genes across selected TCGA-BRCA tumor and normal samples.
-
-**Interpretation:**
-
-- Each row represents one gene.
-- Each column represents one RNA-seq sample.
-- The annotation bar at the top represents the sample condition.
-- The heatmap shows that normal and tumor samples form separate clusters based on gene expression patterns.
-- This suggests that the selected top genes have distinct expression profiles between breast cancer tumor and normal tissue samples.
-
-**Color meaning:**
-
-- **Red/Orange shades** represent higher relative gene expression.
-- **Blue shades** represent lower relative gene expression.
-- **White/Light shades** represent intermediate expression.
-
-**Sample group colors:**
-
-- **Blue/Turquoise annotation** represents Normal samples.
-- **Pink/Salmon annotation** represents Tumor samples.
-
-Overall, the heatmap supports the differential expression analysis by showing clear expression differences between tumor and normal samples for the top 30 genes.
