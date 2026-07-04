@@ -221,3 +221,12 @@ The significance criteria used in this project were:
 ```text
 Adjusted p-value < 0.05
 Absolute log2 fold change > 1
+![PCA Plot](TCGA_BRCA_small_pca_plot.png)
+
+![Volcano Plot](TCGA_BRCA_small_volcano_plot.png)
+
+![Heatmap](TCGA_BRCA_small_heatmap_top_30_genes.png)
+
+
+
+
