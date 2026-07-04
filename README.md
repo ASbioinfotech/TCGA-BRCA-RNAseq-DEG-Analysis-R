@@ -171,62 +171,8 @@ Breast-Cancer-RNAseq-DEG-Analysis-R/
     ├── TCGA_BRCA_small_volcano_plot.png
     └── TCGA_BRCA_small_heatmap_top_30_genes.png
 
-## Visualizations and Interpretation
-
-### PCA Plot
-
-![PCA Plot](figures/TCGA_BRCA_small_pca_plot.png)
-
-The PCA plot was used to visualize the overall gene expression variation between TCGA-BRCA tumor and normal samples.
-
-**Interpretation:**
-
-- Each point represents one RNA-seq sample.
-- The samples are colored based on their biological group.
-- **Pink/Salmon points represent Normal samples.**
-- **Blue/Turquoise points represent Tumor samples.**
-- PC1 explains **77% of the total variance**, while PC2 explains **9% of the variance**.
-- The tumor and normal samples show clear separation along PC1, indicating that their overall gene expression profiles are different.
-- This separation suggests that breast cancer tumor samples have distinct transcriptomic patterns compared to normal tissue samples.
-
----
-
-### Volcano Plot
-
-![Volcano Plot](figures/TCGA_BRCA_small_volcano_plot.png)
-
-The volcano plot shows differentially expressed genes between TCGA-BRCA tumor and normal samples.
-
-**Interpretation:**
-
-- Each point represents one gene.
-- The X-axis shows **log2 fold change**.
-- The Y-axis shows **-log10 adjusted p-value**.
-- Genes farther from the center show larger expression differences.
-- Genes higher on the plot are more statistically significant.
-
-**Color meaning:**
-
-- **Blue points:** Upregulated genes  
-  These genes show higher expression in tumor samples compared to normal samples.
-
-- **Red/Pink points:** Downregulated genes  
-  These genes show lower expression in tumor samples compared to normal samples.
-
-- **Green points:** Not significant genes  
-  These genes do not pass the selected significance threshold.
-
-The significance criteria used in this project were:
-
-```text
-Adjusted p-value < 0.05
-Absolute log2 fold change > 1
 ![PCA Plot](TCGA_BRCA_small_pca_plot.png)
 
 ![Volcano Plot](TCGA_BRCA_small_volcano_plot.png)
 
 ![Heatmap](TCGA_BRCA_small_heatmap_top_30_genes.png)
-
-
-
-
