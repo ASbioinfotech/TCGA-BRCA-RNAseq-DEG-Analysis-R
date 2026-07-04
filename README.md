@@ -171,6 +171,124 @@ Breast-Cancer-RNAseq-DEG-Analysis-R/
     ├── TCGA_BRCA_small_volcano_plot.png
     └── TCGA_BRCA_small_heatmap_top_30_genes.png
 
+## Visualizations and Interpretation
+
+This project generated three main visual outputs to understand the gene expression differences between TCGA-BRCA breast cancer tumor and normal samples.
+
+---
+
+### 1. PCA Plot
+
+The PCA plot was generated to visualize the overall gene expression variation between tumor and normal samples.
+
+**Purpose of PCA Plot:**
+
+Principal Component Analysis helps reduce complex gene expression data into major components so that sample-level variation can be visualized easily. In this project, PCA was used to check whether tumor and normal samples show different overall expression patterns.
+
+**Interpretation:**
+
+- Each point in the PCA plot represents one RNA-seq sample.
+- Samples are grouped based on their overall gene expression profiles.
+- Normal and tumor samples show separation from each other.
+- PC1 explains the largest amount of variation in the dataset.
+- Clear separation between tumor and normal samples suggests that their transcriptomic profiles are different.
+- This supports the idea that breast cancer tumor samples have distinct gene expression patterns compared to normal tissue samples.
+
+**Color Meaning:**
+
+- Pink/Salmon points represent normal samples.
+- Blue/Turquoise points represent tumor samples.
+
+**Biological Meaning:**
+
+The separation between tumor and normal samples indicates that breast cancer tissues have major transcriptomic differences compared to normal breast tissue. This provides a strong basis for performing differential gene expression analysis.
+
+---
+
+### 2. Volcano Plot
+
+The volcano plot was generated to identify and visualize differentially expressed genes between tumor and normal samples.
+
+**Purpose of Volcano Plot:**
+
+A volcano plot combines both statistical significance and fold change in one figure. It helps identify genes that are strongly and significantly different between two biological conditions.
+
+**Interpretation:**
+
+- Each point represents one gene.
+- The X-axis represents log2 fold change.
+- The Y-axis represents -log10 adjusted p-value.
+- Genes on the right side show higher expression in tumor samples.
+- Genes on the left side show lower expression in tumor samples.
+- Genes higher on the plot are more statistically significant.
+- Genes far from the center have stronger expression differences.
+
+**Color Meaning:**
+
+- Blue points represent upregulated genes.
+- Red/Pink points represent downregulated genes.
+- Green points represent genes that are not statistically significant.
+
+**Significance Criteria Used:**
+
+- Adjusted p-value < 0.05
+- Absolute log2 fold change > 1
+
+**Biological Meaning:**
+
+The volcano plot shows that several genes are significantly upregulated or downregulated in breast cancer tumor samples. These genes may be involved in breast cancer development, tumor progression, altered cellular pathways, or cancer-related molecular changes.
+
+---
+
+### 3. Heatmap
+
+The heatmap was generated to visualize the expression patterns of the top 30 differentially expressed genes across tumor and normal samples.
+
+**Purpose of Heatmap:**
+
+A heatmap helps compare gene expression levels across samples. It allows us to observe whether selected genes show different expression patterns between tumor and normal groups.
+
+**Interpretation:**
+
+- Each row represents one gene.
+- Each column represents one RNA-seq sample.
+- The top annotation bar represents the sample group.
+- Tumor and normal samples show distinct expression patterns.
+- Samples with similar expression profiles cluster together.
+- The top differentially expressed genes help separate tumor samples from normal samples.
+
+**Color Meaning:**
+
+- Red/Orange shades represent higher relative gene expression.
+- Blue shades represent lower relative gene expression.
+- White/Light shades represent intermediate expression.
+
+**Sample Group Colors:**
+
+- Blue/Turquoise annotation represents normal samples.
+- Pink/Salmon annotation represents tumor samples.
+
+**Biological Meaning:**
+
+The heatmap supports the differential expression results by showing that the top genes have clear expression differences between tumor and normal samples. This suggests that these genes may contribute to breast cancer-related molecular changes.
+
+---
+
+### Summary of Visual Findings
+
+Overall, the visualizations show clear differences between breast cancer tumor and normal samples.
+
+- The PCA plot shows separation between tumor and normal samples.
+- The volcano plot identifies significantly upregulated and downregulated genes.
+- The heatmap shows distinct expression patterns among the top differentially expressed genes.
+
+Together, these visualizations support the conclusion that TCGA-BRCA tumor samples have different gene expression profiles compared to normal breast tissue samples.
+
+---
+
+### Note
+
+For computational efficiency, this project used a small subset of TCGA-BRCA samples. Therefore, the results should be interpreted as a demonstration of the RNA-seq differential expression workflow rather than final biological conclusions. A larger sample size would be required for deeper biological interpretation and validation.
 
 
-https://github.com/ASbioinfotech/TCGA-BRCA-RNAseq-DEG-Analysis-R/blob/main/TCGA_BRCA_small_pca_plot.png
+
