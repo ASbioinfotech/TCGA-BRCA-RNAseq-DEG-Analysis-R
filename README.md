@@ -171,19 +171,6 @@ Breast-Cancer-RNAseq-DEG-Analysis-R/
     ├── TCGA_BRCA_small_volcano_plot.png
     └── TCGA_BRCA_small_heatmap_top_30_genes.png
 
-## Visualizations
-
-### PCA Plot
-
-![PCA Plot](TCGA_BRCA_small_pca_plot.png)
-
-### Volcano Plot
-
-![Volcano Plot](TCGA_BRCA_small_volcano_plot.png)
-
-### Heatmap
-
-![Heatmap](TCGA_BRCA_small_heatmap_top_30_genes.png)
 
 
-
+https://github.com/ASbioinfotech/TCGA-BRCA-RNAseq-DEG-Analysis-R/blob/main/TCGA_BRCA_small_pca_plot.png
