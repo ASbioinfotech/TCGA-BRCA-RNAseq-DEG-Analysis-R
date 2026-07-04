@@ -1,0 +1,7 @@
+"sample_id","sample_type","condition"
+"TCGA-BH-A18H-01A-11R-A12D-07","Primary Tumor","Tumor"
+"TCGA-E2-A14P-01A-31R-A12D-07","Primary Tumor","Tumor"
+"TCGA-AN-A04A-01A-21R-A034-07","Primary Tumor","Tumor"
+"TCGA-GI-A2C8-11A-22R-A16F-07","Solid Tissue Normal","Normal"
+"TCGA-BH-A0BW-11A-12R-A115-07","Solid Tissue Normal","Normal"
+"TCGA-BH-A1FE-11B-14R-A13Q-07","Solid Tissue Normal","Normal"
